@@ -3,6 +3,7 @@
  * Modelo de classe geral de produtos, contém metodos para cadastrar, deletar, listar, alterar.
  * Modo de Usar:
  * require_once './Produto.class.php';
+ * $produto->public_methods();
  */
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/easygen/config/config.php';
@@ -166,40 +167,4 @@ class Produto_model extends Database
 		}
 	}
 }
-
-
-
-
 $produto = new Produto_model();
-
-// dados da classe de produtos
-$produto_data_add = Array(
-	'prod_categoria'=>"'Eletronico'",
-	'prod_nome' =>"'Iphone4s'",
-	'prod_desc' =>"'iphone novo'",
-	'prod_estoque_min' =>"'35'",
-	'prod_estoque_atual' =>"'2230'",
-	'prod_valor_bruto' =>"'1350'",
-	'prod_valor_liq' =>"'39900'", 
-	'prod_data_cadastro'=>"'20022019'"
-);
-
-$produto_data_update = Array(
-	'prod_categoria'=>'Perfsssumes',
-	'prod_nome' =>'aeee',
-	'prod_desc' =>'iphone novo',
-	'prod_estoque_min' =>'35',
-	'prod_estoque_atual' =>'2230',
-	'prod_valor_bruto' =>'1350',
-	'prod_valor_liq' =>'39900', 
-);
-
-
-//$produto->insert($produto_data_update);
-//$produto->update(65, $produto_data_update);
-
-/* Metodos funcionais d modelo de produtos
-$produto->add($produto_data);
-$produto->listar('1');
-$produto->deletar(60);
-*/
