@@ -27,9 +27,9 @@ class Tests Extends Database
 
 
 $test = new Tests();
-$caraio =  implode($_POST);
+$x =  implode($_POST);
 
-$test->get_prod_categoria($caraio);
+$test->get_prod_categoria($x);
 
 
 /*$result = [];
